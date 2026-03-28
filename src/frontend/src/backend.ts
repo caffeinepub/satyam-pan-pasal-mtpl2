@@ -113,14 +113,30 @@ export enum PackageType {
     standard = "standard"
 }
 export interface backendInterface {
+    addItemToCart(productId: bigint): Promise<void>;
     getAllBookings(): Promise<Array<Booking>>;
     getAllContacts(): Promise<Array<Contact>>;
+    removeItemFromCart(productId: bigint): Promise<void>;
     submitBooking(name: string, email: string, phone: string, preferredDate: string, packageType: PackageType, numberOfGuests: bigint, message: string): Promise<void>;
     submitContact(name: string, email: string, message: string): Promise<void>;
 }
 import type { Booking as _Booking, PackageType as _PackageType } from "./declarations/backend.did.d.ts";
 export class Backend implements backendInterface {
     constructor(private actor: ActorSubclass<_SERVICE>, private _uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, private _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, private processError?: (error: unknown) => never){}
+    async addItemToCart(arg0: bigint): Promise<void> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.addItemToCart(arg0);
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.addItemToCart(arg0);
+            return result;
+        }
+    }
     async getAllBookings(): Promise<Array<Booking>> {
         if (this.processError) {
             try {
@@ -146,6 +162,20 @@ export class Backend implements backendInterface {
             }
         } else {
             const result = await this.actor.getAllContacts();
+            return result;
+        }
+    }
+    async removeItemFromCart(arg0: bigint): Promise<void> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.removeItemFromCart(arg0);
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.removeItemFromCart(arg0);
             return result;
         }
     }

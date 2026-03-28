@@ -32,8 +32,10 @@ export type PackageType = { 'vip' : null } |
   { 'premium' : null } |
   { 'standard' : null };
 export interface _SERVICE {
+  'addItemToCart' : ActorMethod<[bigint], undefined>,
   'getAllBookings' : ActorMethod<[], Array<Booking>>,
   'getAllContacts' : ActorMethod<[], Array<Contact>>,
+  'removeItemFromCart' : ActorMethod<[bigint], undefined>,
   'submitBooking' : ActorMethod<
     [string, string, string, string, PackageType, bigint, string],
     undefined

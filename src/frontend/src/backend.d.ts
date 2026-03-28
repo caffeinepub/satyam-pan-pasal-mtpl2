@@ -31,8 +31,10 @@ export enum PackageType {
     standard = "standard"
 }
 export interface backendInterface {
+    addItemToCart(productId: bigint): Promise<void>;
     getAllBookings(): Promise<Array<Booking>>;
     getAllContacts(): Promise<Array<Contact>>;
+    removeItemFromCart(productId: bigint): Promise<void>;
     submitBooking(name: string, email: string, phone: string, preferredDate: string, packageType: PackageType, numberOfGuests: bigint, message: string): Promise<void>;
     submitContact(name: string, email: string, message: string): Promise<void>;
 }

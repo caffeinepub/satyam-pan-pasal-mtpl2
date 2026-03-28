@@ -1,11 +1,11 @@
-import Array "mo:core/Array";
-import Time "mo:core/Time";
-import Text "mo:core/Text";
-import Order "mo:core/Order";
-import Set "mo:core/Set";
-import Nat "mo:core/Nat";
 import Iter "mo:core/Iter";
 import Map "mo:core/Map";
+import Nat "mo:core/Nat";
+import Order "mo:core/Order";
+import Set "mo:core/Set"; // Add this import
+import Text "mo:core/Text";
+import Array "mo:core/Array";
+import Time "mo:core/Time";
 
 
 
@@ -116,5 +116,20 @@ actor {
 
   public query ({ caller }) func getAllContacts() : async [Contact] {
     contacts.values().toArray().sort(compareContactById);
+  };
+
+  // Shopping cart functions
+  public shared ({ caller }) func addItemToCart(productId : Nat) : async () {
+    let cartActor = actor "gimz3-b4aaa-aaaap-abtda-cai" : actor {
+      addProduct : (id : Nat, quantity : Nat) -> async ();
+    };
+    await cartActor.addProduct(productId, 1);
+  };
+
+  public shared ({ caller }) func removeItemFromCart(productId : Nat) : async () {
+    let cartActor = actor "gimz3-b4aaa-aaaap-abtda-cai" : actor {
+      removeProduct : (id : Nat, quantity : Nat) -> async ();
+    };
+    await cartActor.removeProduct(productId, 1);
   };
 };

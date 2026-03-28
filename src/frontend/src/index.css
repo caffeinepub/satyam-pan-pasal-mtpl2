@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,34 +6,39 @@
 
 @layer base {
   :root {
-    --background: 97 2% 98%;
-    --foreground: 220 15% 12%;
+    /* Army IGNSEE – Olive/Khaki/Gold military palette */
+    --background: 60 15% 95%;
+    --foreground: 90 20% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 12%;
+    --card-foreground: 90 20% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 12%;
-    --primary: 200 70% 35%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 170 55% 35%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 210 20% 96%;
-    --muted-foreground: 220 10% 45%;
-    --accent: 38 92% 50%;
-    --accent-foreground: 220 15% 12%;
+    --popover-foreground: 90 20% 10%;
+    /* Primary olive green */
+    --primary: 82 40% 28%;
+    --primary-foreground: 0 0% 98%;
+    /* Gold accent */
+    --secondary: 43 85% 50%;
+    --secondary-foreground: 90 40% 10%;
+    --muted: 60 10% 90%;
+    --muted-foreground: 0 0% 42%;
+    --accent: 43 70% 90%;
+    --accent-foreground: 90 40% 15%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 200 70% 35%;
-    --radius: 0.75rem;
+    --border: 60 10% 82%;
+    --input: 60 10% 82%;
+    --ring: 82 40% 28%;
+    --radius: 0.25rem;
 
-    /* OKLCH custom tokens */
-    --sky-blue: oklch(0.5 0.14 240);
-    --deep-blue: oklch(0.25 0.12 240);
-    --teal: oklch(0.5 0.12 190);
-    --amber: oklch(0.72 0.17 75);
-    --nav-bg: oklch(0.18 0.06 240 / 0.75);
-    --hero-overlay: oklch(0.1 0.06 240 / 0.45);
+    /* OKLCH brand tokens */
+    --ai-olive: oklch(0.4 0.08 130);
+    --ai-olive-dark: oklch(0.28 0.07 130);
+    --ai-olive-light: oklch(0.55 0.08 130);
+    --ai-khaki: oklch(0.88 0.04 95);
+    --ai-gold: oklch(0.72 0.14 75);
+    --ai-gold-dark: oklch(0.58 0.14 75);
+    --ai-charcoal: oklch(0.2 0.01 260);
+    --ai-sand: oklch(0.94 0.025 95);
   }
 
   * {
@@ -42,7 +47,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
   }
 
   html {

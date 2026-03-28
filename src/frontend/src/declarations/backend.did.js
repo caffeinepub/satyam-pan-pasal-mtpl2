@@ -33,8 +33,10 @@ export const Contact = IDL.Record({
 });
 
 export const idlService = IDL.Service({
+  'addItemToCart' : IDL.Func([IDL.Nat], [], []),
   'getAllBookings' : IDL.Func([], [IDL.Vec(Booking)], ['query']),
   'getAllContacts' : IDL.Func([], [IDL.Vec(Contact)], ['query']),
+  'removeItemFromCart' : IDL.Func([IDL.Nat], [], []),
   'submitBooking' : IDL.Func(
       [IDL.Text, IDL.Text, IDL.Text, IDL.Text, PackageType, IDL.Nat, IDL.Text],
       [],
@@ -71,8 +73,10 @@ export const idlFactory = ({ IDL }) => {
   });
   
   return IDL.Service({
+    'addItemToCart' : IDL.Func([IDL.Nat], [], []),
     'getAllBookings' : IDL.Func([], [IDL.Vec(Booking)], ['query']),
     'getAllContacts' : IDL.Func([], [IDL.Vec(Contact)], ['query']),
+    'removeItemFromCart' : IDL.Func([IDL.Nat], [], []),
     'submitBooking' : IDL.Func(
         [
           IDL.Text,

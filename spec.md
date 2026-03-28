@@ -1,28 +1,23 @@
-# Para World Tsering Dorjee
+# Army IGNSEE
 
 ## Current State
-New project — no existing application files.
+Minsang Store website with products, cart, about, and payment section.
 
 ## Requested Changes (Diff)
 
 ### Add
-- Full landing page for Para World Tsering Dorjee paragliding company
-- Hero section with paragliding adventure headline and CTA buttons
-- Experience Packages section with 3 package cards
-- Booking form section (Name, Date, Guests, Email, Message, Package)
-- About Us section featuring owner Tsering Dorjee
-- Contact section with mobile numbers 9808091436 / 9766047350
-- Bank QR Code section (NIC ASIA MoBank) at /assets/uploads/img_6438-019d3534-b81b-74de-b525-c5dc5e3dc518-1.jpeg
-- Footer with links and social icons
+- New website for Army IGNSEE, owner Tsering Dorjee
+- Mobile: 9808091436
+- eSewa QR code: /assets/uploads/img_6439-019d3570-78e2-7257-bc0e-25f5d2e2ac95-1.jpeg
 
 ### Modify
-- N/A
+- Replace entire App.tsx with Army IGNSEE website
+- Rename project to Army IGNSEE
 
 ### Remove
-- N/A
+- All Minsang Store content
 
 ## Implementation Plan
-1. Build Motoko backend with booking submission storage
-2. Build React frontend matching design preview with all sections
-3. Wire booking form to backend
-4. Display QR code image in Contact/Payment section
+1. Build Army IGNSEE website with Hero, About, Products/Services, Payment (eSewa QR), Contact, Footer
+2. Include owner Tsering Dorjee, mobile 9808091436
+3. Show eSewa QR code in payment section

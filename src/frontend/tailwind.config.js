@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["'Bricolage Grotesque'", "sans-serif"],
-        body: ["'Plus Jakarta Sans'", "sans-serif"],
+        display: ["'Oswald'", "sans-serif"],
+        body: ["'Source Sans 3'", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -50,6 +50,15 @@ export default {
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
+        },
+        olive: {
+          DEFAULT: "oklch(var(--ai-olive) / <alpha-value>)",
+          dark: "oklch(var(--ai-olive-dark) / <alpha-value>)",
+          light: "oklch(var(--ai-olive-light) / <alpha-value>)",
+        },
+        gold: {
+          DEFAULT: "oklch(var(--ai-gold) / <alpha-value>)",
+          dark: "oklch(var(--ai-gold-dark) / <alpha-value>)",
         },
       },
       borderRadius: {
