@@ -1,23 +1,26 @@
-# Army IGNSEE
+# BMW Car Company
 
 ## Current State
-Minsang Store website with products, cart, about, and payment section.
+New project — no existing application files.
 
 ## Requested Changes (Diff)
 
 ### Add
-- New website for Army IGNSEE, owner Tsering Dorjee
-- Mobile: 9808091436
-- eSewa QR code: /assets/uploads/img_6439-019d3570-78e2-7257-bc0e-25f5d2e2ac95-1.jpeg
+- Full business website for BMW Car Company
+- Owner: Tsering Dorjee
+- Mobile: 9768993140 / 9808091436
+- Location: Pokhara
+- Two NIC ASIA MoBank QR codes in payment section
 
 ### Modify
-- Replace entire App.tsx with Army IGNSEE website
-- Rename project to Army IGNSEE
+- N/A
 
 ### Remove
-- All Minsang Store content
+- N/A
 
 ## Implementation Plan
-1. Build Army IGNSEE website with Hero, About, Products/Services, Payment (eSewa QR), Contact, Footer
-2. Include owner Tsering Dorjee, mobile 9808091436
-3. Show eSewa QR code in payment section
+1. Hero section with BMW Car Company branding
+2. Services/About section
+3. Contact section with owner name, mobile numbers, location
+4. Payment section with both NIC ASIA MoBank QR codes
+5. Footer

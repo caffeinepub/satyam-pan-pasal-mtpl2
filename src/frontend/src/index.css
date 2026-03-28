@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,51 +6,62 @@
 
 @layer base {
   :root {
-    /* Army IGNSEE – Olive/Khaki/Gold military palette */
-    --background: 60 15% 95%;
-    --foreground: 90 20% 10%;
+    --background: 0 0% 100%;
+    --foreground: 222 84% 5%;
     --card: 0 0% 100%;
-    --card-foreground: 90 20% 10%;
+    --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
-    --popover-foreground: 90 20% 10%;
-    /* Primary olive green */
-    --primary: 82 40% 28%;
-    --primary-foreground: 0 0% 98%;
-    /* Gold accent */
-    --secondary: 43 85% 50%;
-    --secondary-foreground: 90 40% 10%;
-    --muted: 60 10% 90%;
-    --muted-foreground: 0 0% 42%;
-    --accent: 43 70% 90%;
-    --accent-foreground: 90 40% 15%;
-    --destructive: 0 72% 51%;
+    --popover-foreground: 222 84% 5%;
+    --primary: 210 78% 16%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 78% 16%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 90%;
+    --accent-foreground: 210 78% 16%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 60 10% 82%;
-    --input: 60 10% 82%;
-    --ring: 82 40% 28%;
-    --radius: 0.25rem;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 78% 16%;
+    --radius: 0.375rem;
 
-    /* OKLCH brand tokens */
-    --ai-olive: oklch(0.4 0.08 130);
-    --ai-olive-dark: oklch(0.28 0.07 130);
-    --ai-olive-light: oklch(0.55 0.08 130);
-    --ai-khaki: oklch(0.88 0.04 95);
-    --ai-gold: oklch(0.72 0.14 75);
-    --ai-gold-dark: oklch(0.58 0.14 75);
-    --ai-charcoal: oklch(0.2 0.01 260);
-    --ai-sand: oklch(0.94 0.025 95);
+    /* BMW Brand tokens */
+    --bmw-navy: oklch(22% 0.07 240);
+    --bmw-navy-dark: oklch(15% 0.07 240);
+    --bmw-blue: oklch(35% 0.1 240);
+    --bmw-silver: oklch(75% 0.01 240);
+    --bmw-gold: oklch(72% 0.12 60);
   }
+}
 
+@layer base {
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
   }
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+.bmw-navy-bg {
+  background-color: var(--bmw-navy);
+}
+
+.bmw-navy-dark-bg {
+  background-color: var(--bmw-navy-dark);
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 31, 52, 0.75) 0%,
+    rgba(11, 42, 69, 0.85) 100%
+  );
+}
+
+.text-bmw-gold {
+  color: var(--bmw-gold);
 }
