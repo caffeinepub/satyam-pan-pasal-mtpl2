@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 97 2% 98%;
+    --foreground: 220 15% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+    --primary: 200 70% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 170 55% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 220 15% 12%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 200 70% 35%;
+    --radius: 0.75rem;
+
+    /* OKLCH custom tokens */
+    --sky-blue: oklch(0.5 0.14 240);
+    --deep-blue: oklch(0.25 0.12 240);
+    --teal: oklch(0.5 0.12 190);
+    --amber: oklch(0.72 0.17 75);
+    --nav-bg: oklch(0.18 0.06 240 / 0.75);
+    --hero-overlay: oklch(0.1 0.06 240 / 0.45);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
