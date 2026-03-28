@@ -56,7 +56,7 @@ const WHY_CHOOSE = [
   {
     icon: Shield,
     title: "Authorised Dealership",
-    desc: "Official BMW dealership in Pokhara ensuring genuine quality and warranty support.",
+    desc: "Official BMW dealership in Prithive Cholk, Pokhara Nepal SUB - Metro ensuring genuine quality and warranty support.",
   },
   {
     icon: Car,
@@ -104,7 +104,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <span className="flex items-center gap-2">
             <MapPin className="w-3 h-3" />
-            Pokhara, Nepal
+            Prithive Cholk, Pokhara Nepal SUB - Metro
           </span>
           <span className="flex items-center gap-3">
             <Phone className="w-3 h-3" />
@@ -217,7 +217,7 @@ export default function App() {
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <p className="text-yellow-400 text-sm font-semibold tracking-[0.4em] uppercase mb-4">
-            BMW Car Company — Pokhara, Nepal
+            BMW Car Company — Prithive Cholk, Pokhara Nepal SUB - Metro
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight tracking-wide mb-6">
             EXPERIENCE PURE
@@ -228,7 +228,8 @@ export default function App() {
           </h1>
           <p className="text-gray-300 text-base md:text-lg mb-8 max-w-xl mx-auto">
             Discover the world's most iconic luxury automobiles. Authorised BMW
-            dealership serving Pokhara and beyond.
+            dealership serving Prithive Cholk, Pokhara Nepal SUB - Metro and
+            beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -518,7 +519,7 @@ export default function App() {
                     Location
                   </p>
                   <p className="text-gray-900 font-bold text-lg">
-                    Pokhara, Nepal
+                    Prithive Cholk, Pokhara Nepal SUB - Metro
                   </p>
                 </div>
               </div>
@@ -563,8 +564,8 @@ export default function App() {
                 </div>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Authorised BMW dealership in Pokhara, Nepal. Delivering the
-                ultimate driving experience.
+                Authorised BMW dealership in Prithive Cholk, Pokhara Nepal SUB -
+                Metro. Delivering the ultimate driving experience.
               </p>
             </div>
 
@@ -600,7 +601,8 @@ export default function App() {
                   <Phone className="w-4 h-4" /> 9768993140 / 9808091436
                 </p>
                 <p className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" /> Pokhara, Nepal
+                  <MapPin className="w-4 h-4" /> Prithive Cholk, Pokhara Nepal
+                  SUB - Metro
                 </p>
               </div>
             </div>
@@ -609,7 +611,10 @@ export default function App() {
           <Separator className="bg-white/10 mb-6" />
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-            <p>© {year} BMW Car Company, Pokhara. All rights reserved.</p>
+            <p>
+              © {year} BMW Car Company, Prithive Cholk Pokhara Nepal SUB -
+              Metro. All rights reserved.
+            </p>
             <p>
               Built with ❤️ using{" "}
               <a
